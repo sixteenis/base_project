@@ -1,0 +1,101 @@
+name: base_project
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+version: 1.0.0+1
+
+environment:
+  # 기존 환경 설정(>=3.0.0 <4.0.0)과 새 환경 설정(^3.8.1)을 고려하여
+  # 새로운 환경 설정인 ^3.8.1을 유지합니다.
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 기본 패키지 (base_project에 있던 것)
+  cupertino_icons: ^1.0.8
+
+  # splash creator
+  flutter_native_splash: ^2.3.0
+
+  # dart
+  meta: ^1.4.0
+  quiver: ^3.2.1
+  equatable: ^2.0.5
+
+  # util
+  velocity_x: ^4.1.2
+
+  # data
+  shared_preferences: ^2.0.15
+  isar: ^3.1.0+1
+
+  # architecture
+  event_bus: ^2.0.0
+  get: ^4.6.5
+
+  # ui - resource
+  eva_icons_flutter: ^3.1.0
+  google_fonts: ^6.3.2
+  easy_localization: ^3.0.2
+  flutter_cache_manager: ^3.3.0
+
+  # ui - widget
+  nav: ^1.3.9
+  simple_shadow: ^0.3.1
+  after_layout: ^1.2.0
+  flutter_svg: ^2.0.3
+  cached_network_image: ^3.2.3
+
+  # ui - util
+#  keyboard_utils_fork: ^1.0.1
+
+  # network
+  dio: ^5.0.0
+  retrofit: ^4.0.1
+  freezed: ^3.0.0-0.0.dev
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # lint
+  flutter_lints: ^6.0.0
+
+  # build
+  retrofit_generator: ^8.2.1
+  build_runner: ^2.4.13
+  json_serializable: ^6.6.1
+  isar_generator: ^3.1.0+1
+  mock_web_server: ^5.0.0-nullsafety.1
+  flutter_oss_licenses: ^3.0.4
+
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/json/
+    - assets/image/
+    - assets/image/icon/
+    - assets/image/flag/
+    - assets/image/darkmode/
+    - assets/translations/
+    - assets/
