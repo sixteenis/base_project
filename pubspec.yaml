@@ -54,8 +54,10 @@ dependencies:
   cached_network_image: ^3.2.3
 
   # ui - util
-#  keyboard_utils_fork: ^1.0.1
-
+  keyboard_utils_plugin:
+    git:
+      url: https://github.com/BansookNam/keyboard_utils
+      ref: master # ⭐️ 가장 확실한 'master' 브랜치를 사용합니다.
   # network
   dio: ^5.0.0
   retrofit: ^4.0.1
